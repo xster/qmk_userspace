@@ -12,6 +12,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 BACKLIGHT_ENABLE = yes
+BACKLIGHT_DRIVER = timer
 RGBLIGHT_ENABLE = yes
 # CONSOLE_ENABLED = yes
 MOUSEKEY_ENABLED = no
