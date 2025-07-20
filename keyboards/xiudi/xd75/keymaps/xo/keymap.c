@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT_ortho_5x15(
     QK_BOOT, LALT(LGUI(KC_SLEP)), KC_WAKE, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-    MAGIC_NO_GUI, MAGIC_UNNO_GUI, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    QK_MAGIC_GUI_OFF, QK_MAGIC_GUI_ON, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, BL_DOWN, BL_UP, BL_TOGG,
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RGB_RMOD, RGB_MOD, RGB_SAD, RGB_SAI, RGB_HUD, RGB_HUI, RGB_VAD, RGB_VAI, RGB_TOG
@@ -80,10 +80,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       case KC_RGUI:
         rgblight_sethsv_noeeprom(HSV_SPRINGGREEN);
         break;
-      case MAGIC_NO_GUI:
+      case QK_MAGIC_GUI_OFF:
         no_gui = true;
         break;
-      case MAGIC_UNNO_GUI:
+      case QK_MAGIC_GUI_ON:
         no_gui = false;
         break;
     }
