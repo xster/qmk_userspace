@@ -3,6 +3,10 @@
 #    include "keymap.h"
 #endif
 
+#define BASE_COLOR 166, 255, 255
+#define NO_GUI_COLOR 5, 255, 255
+#define DIM_COLOR 22, 200, 200
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ortho_5x15(
     KC_ESC,              KC_1,                KC_2,                KC_3,                KC_4,                KC_5,                KC_PGUP,             KC_GRV,              KC_PGDN,             KC_6,                KC_7,                KC_8,                KC_9,                KC_0,                KC_RBRC,
@@ -24,8 +28,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO,               LALT(LGUI(KC_SLEP)), KC_WAKE,             KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               QK_BOOT,
     QK_MAGIC_GUI_OFF,    QK_MAGIC_GUI_ON,     KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,
     KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,
-    KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               BL_DOWN,             BL_UP,               BL_TOGG,
-    KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               RGB_RMOD,            RGB_MOD,             RGB_SAD,             RGB_SAI,             RGB_HUD,             RGB_HUI,             RGB_VAD,             RGB_VAI,             RGB_TOG
+    KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               RM_VALD,             RM_VALU,             RM_SATD,             RM_SATU,             RM_HUED,             RM_HUEU,             RM_PREV,             RM_NEXT,             RM_TOGG,
+    KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               KC_NO,               UG_VALD,             UG_VALU,             UG_SATD,             UG_SATU,             UG_HUED,             UG_HUEU,             UG_PREV,             UG_NEXT,             UG_TOGG
   )
 };
 
