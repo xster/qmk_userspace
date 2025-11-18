@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCTL(KC_GRV),        KC_F13,              KC_F14,              KC_F15,              KC_F16,              KC_F17,              KC_P4,               KC_P5,               KC_P6,               KC_PPLS,             KC_PMNS,             KC_F17,              KC_F18,              LALT(LSFT(KC_VOLD)), LALT(LSFT(KC_VOLU)),
     KC_CAPS,             LCTL(LSFT(KC_S)),    LCTL(LSFT(KC_TAB)),  LCTL(KC_TAB),        LCMD(KC_W),          LCMD(LSFT(KC_T)),    KC_P1,               KC_P2,               KC_P3,               KC_PAST,             KC_PSLS,             KC_NO,               KC_MUTE,             KC_VOLD,             KC_VOLU,
     KC_TRNS,             LCTL(KC_K),          LCMD(KC_LEFT),       LCMD(KC_RIGHT),      LCTL(LSFT(KC_K)),    KC_BSPC,             KC_P0,               KC_SLSH,             KC_PDOT,             KC_PENT,             KC_NO,               KC_NO,               KC_MRWD,             KC_MPLY,             KC_MFFD,
-    TG(1),               LCMD(LSFT(KC_A)),    KC_MS_WH_UP,         KC_MS_WH_DOWN,       HYPR(KC_C),          MO(2),               KC_NO,               KC_NO,               KC_ASTR,             KC_PENT,             KC_PENT,             MO(1),               KC_TRNS,             KC_TRNS,             TG(1)
+    TG(1),               LCMD(LSFT(KC_A)),    MS_WHLU,         MS_WHLD,       HYPR(KC_C),          MO(2),               KC_NO,               KC_NO,               KC_ASTR,             KC_PENT,             KC_PENT,             MO(1),               KC_TRNS,             KC_TRNS,             TG(1)
   ),
 
   [2] = LAYOUT_ortho_5x15(
